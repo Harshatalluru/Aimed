@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import image from "./image.png";
-import { Link } from "react-router-dom";
+
 import { Box, Container, px2vw } from "./style";
 import CBox from "./box";
-import { useTheme, Grid, useMediaQuery, Hidden } from "@mui/material";
-// import { Lock, Person } from "@material-ui/icons";
+import { useTheme,  useMediaQuery, Hidden } from "@mui/material";
+
 
 function Login() {
-  // const history = useHistory();
+
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
-  const matchesXXS = useMediaQuery(theme.breakpoints.down("xxs"));
+  
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [email, setEmail] = useState("");
